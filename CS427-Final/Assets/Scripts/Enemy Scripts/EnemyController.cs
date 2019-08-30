@@ -44,7 +44,7 @@ public class EnemyController : MonoBehaviour
         enemy_Anim = GetComponent<EnemyAnimator>();
         navAgent = GetComponent<NavMeshAgent>();
 
-        target = GameObject.FindWithTag(Tags.PLAYER_TAG).transform;
+        target = GameObject.FindWithTag(Tag.PLAYER_TAG).transform;
 
         enemy_Audio = GetComponentInChildren<EnemyAudio>();
 

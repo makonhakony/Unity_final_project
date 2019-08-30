@@ -47,7 +47,7 @@ MonoBehaviour:
   radius: 1
   layerMask:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 0
 --- !u!1 &5179611807527889409
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,6 +166,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1252,6 +1253,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1341,7 +1343,7 @@ GameObject:
   - component: {fileID: 3042473713627206352}
   - component: {fileID: 4547263909595697810}
   - component: {fileID: 208091253101580231}
-  - component: {fileID: 815489058}
+  - component: {fileID: 910843261942421426}
   - component: {fileID: 815489059}
   - component: {fileID: 4508715199161806077}
   - component: {fileID: 6583093941010985075}
@@ -1465,8 +1467,8 @@ MonoBehaviour:
   patrol_Radius_Max: 60
   patrol_For_This_Time: 15
   wait_Before_Attack: 2
-  attack_Point: {fileID: 4154632993699101799}
---- !u!114 &815489058
+  attack_Point: {fileID: 0}
+--- !u!114 &910843261942421426
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1490,12 +1492,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c904d1d9c4f237240bee69026df9f6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scream_Clip: {fileID: 8300000, guid: 833640be22bd78a48890ee30c4f7f0f0, type: 3}
-  die_Clip: {fileID: 8300000, guid: cc5d0701b7e264a488ef8b8a3bff299e, type: 3}
-  attack_Clips:
-  - {fileID: 8300000, guid: a78ba1c4b551e7545b8aff8141fc5c67, type: 3}
-  - {fileID: 8300000, guid: d580433357c937c4ca58e55886965224, type: 3}
-  - {fileID: 8300000, guid: fb437b4ef5ae1a04d86529f50e2fd701, type: 3}
+  scream_Clip: {fileID: 0}
+  die_Clip: {fileID: 0}
+  attack_Clips: []
 --- !u!82 &4508715199161806077
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1989,8 +1988,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  is_Boar: 0
-  is_Cannibal: 0
 --- !u!1 &5179611807527889513
 GameObject:
   m_ObjectHideFlags: 0
@@ -2047,6 +2044,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

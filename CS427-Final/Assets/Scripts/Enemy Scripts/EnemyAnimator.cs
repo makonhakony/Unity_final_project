@@ -12,19 +12,19 @@ public class EnemyAnimator : MonoBehaviour
     }
 
     public void Walk(bool walk) {
-        anim.SetBool(AnimationTags.WALK_PARAMETER, walk);
+        anim.SetBool(AnimationTag.WALK_PARAMETER, walk);
     }
 
     public void Run(bool run) {
-        anim.SetBool(AnimationTags.RUN_PARAMETER, run);
+        anim.SetBool(AnimationTag.RUN_PARAMETER, run);
     }
 
     public void Attack() {
-        anim.SetTrigger(AnimationTags.ATTACK_TRIGGER);
+        anim.SetTrigger(AnimationTag.ATTACK_TRIGGER);
     }
 
     public void Dead() {
-        anim.SetTrigger(AnimationTags.DEAD_TRIGGER);
+        anim.SetTrigger(AnimationTag.DEAD_TRIGGER);
     }
 
     // Start is called before the first frame update

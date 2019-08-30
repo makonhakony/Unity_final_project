@@ -4,6 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Axe
+  - Crosshair
+  - look root
+  - FP Camera
+  - Arrow
   - Enemy
   layers:
   - Default
@@ -14,10 +19,10 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
-  - FirstPerson
+  - firstPerson
   - Enemy
-  - Player
+  - 
+  - 
   - 
   - 
   - 
